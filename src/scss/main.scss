@@ -1,6 +1,57 @@
-$badass: #bada55;
+@import "materialize";
 
 body {
-  margin: 0;
-  background-color: $badass;
+  background: #eee;
+}
+
+.side-nav {
+  transform: translateX(0); /* switch off hiding sidebar for now */
+}
+
+#activity-log > li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+#activity-log span {
+  vertical-align: top;
+  display: inline-block;
+  margin-right: 5px;
+  min-width: 100px;
+  color: #72777c;
+  font-size: 13px;
+}
+
+#activity-log a {
+  display: inline-block;
+  max-width: 195px;
+}
+
+.clearfix { overflow: auto; }
+
+.collection .collection-item.avatar {
+    min-height: 63px;
+}
+
+#progress-container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+#content > div > div.col.s9.offset-s3 > div > div {
+  margin-bottom: 0;
+}
+
+.side-nav {
+  width: 20%;
+}
+
+.progress-bar-container {
+  display: inline-block;
+  position:relative;
+}
+
+.card .card-title {
+    font-size: 20px;
 }
