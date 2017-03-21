@@ -19,10 +19,9 @@
           <a href="#!email"><span class="white-text email">jdandturk@coelrind.com</span></a>
         </div>
       </li>
-
       <li><a href="index.php"><i class="material-icons">home</i>Home</a></li>
-      <li><a href="#!"><i class="material-icons">view_module</i>Qualification</a></li>
-      <li><a href="#!"><i class="material-icons">file_upload</i>Upload Evidence</a></li>
+      <li><a href="unit.php"><i class="material-icons">view_module</i>Qualification</a></li>
+      <li><a href="upload.php"><i class="material-icons">file_upload</i>Upload Evidence</a></li>
       <li><a href="#!"><i class="material-icons">message</i>Messages</a></li>
       <li><a href="#!"><i class="material-icons">perm_identity</i>Your Profile</a></li>
       <li><a href="#!"><i class="material-icons">exit_to_app</i>Log Out</a></li>
