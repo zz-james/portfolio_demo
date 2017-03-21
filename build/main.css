@@ -6457,7 +6457,7 @@ body {
 
 #activity-log a {
   display: inline-block;
-  max-width: 195px; }
+  max-width: 150px; }
 
 .clearfix {
   overflow: auto; }
@@ -6483,3 +6483,6 @@ body {
 
 .card .card-title {
   font-size: 20px; }
+
+#learning-outcomes table td {
+  vertical-align: top; }

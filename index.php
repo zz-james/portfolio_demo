@@ -17,7 +17,7 @@
         <a href="#!name"><span class="white-text name">John Doe</span></a>
         <a href="#!email"><span class="white-text email">jdandturk@coelrind.com</span></a>
       </div></li>
-      <li><a href="#!"><i class="material-icons">home</i>Home</a></li>
+      <li><a href="index.php"><i class="material-icons">home</i>Home</a></li>
       <li><a href="#!"><i class="material-icons">view_module</i>Qualification</a></li>
       <li><a href="#!"><i class="material-icons">file_upload</i>Upload Evidence</a></li>
       <li><a href="#!"><i class="material-icons">message</i>Messages</a></li>
@@ -27,7 +27,7 @@
       <li><a class="subheader">Subheader</a></li>
       <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
     </ul>
-  </nav>
+  </div>
   <div id="content">
   <!-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> -->
 <br />
@@ -45,7 +45,6 @@
                   <li><span>Jan 22nd 2017</span> <a href="#">Assessor sign off: Unit 3</a></li>
                   <li><span>Jan 22nd 2017</span> <a href="#">Assessor sign off: Assessment Criteria 3.2.1</a></li>
                   <li><span>Jul 9th 2016</span>   <a href="#">Assessor reassign Evidence</a></li>
-                  <li><span>Mar 30th 2016</span>  <a href="#">Uploaded Evidence: Call Handling</a></li>
                 </ul>
               </p>
             </div>
@@ -54,7 +53,7 @@
           <div class="col s12 m4">
             <div class="icon-block">
               <h5>Progress</h5>
-              <div id="progress-container"></div>
+              <div style="margin: auto" id="progress-container"></div>
             </div>
           </div>
 
@@ -65,20 +64,20 @@
                 <ul class="collection">
                   <li class="collection-item avatar">
                     <img src="images/yuna.jpg" alt="" class="circle">
-                    <span class="title">Title</span>
-                    <p>First Line</p>
+                    <span class="title">Arthur</span>
+                    <p>About your first aid video</p>
                     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                   </li>
                   <li class="collection-item avatar">
                     <i class="material-icons circle">folder</i>
-                    <span class="title">Title</span>
-                    <p>First Line</p>
+                    <span class="title">Centre Admin</span>
+                    <p>Please confirm status</p>
                     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                   </li>
                   <li class="collection-item avatar">
                     <i class="material-icons circle green">insert_chart</i>
-                    <span class="title">Title</span>
-                    <p>First Line</p>
+                    <span class="title">John</span>
+                    <p>Study opportunity</p>
                     <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
                   </li>
                 </ul>
@@ -98,7 +97,7 @@
         <div class="col s3">
           <div class="card small z-depth-3">
             <div class="card-content">
-              <span class="card-title"><a href="#">Process information relating to individuals' offending behaviour</a></span>
+              <span class="card-title"><a href="unit.php">Process information relating to individuals' offending behaviour</a></span>
             </div>
             <div class="card-action">
               <span class="progress-bar-container"></span>
