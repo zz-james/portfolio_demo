@@ -43,8 +43,8 @@
               <div class="filename"><strong>File name:</strong> trainingCert12.pdf</div>
               <div class="filename"><strong>File type:</strong> application/pdf</div>
               <div class="uploaded"><strong>Uploaded on:</strong> February 29, 2017</div>
+<div class="description"><strong>Description:</strong> Certificate of attendance for training in Data Protection Act</div>
 
-              <div class="file-size"><strong>File size:</strong> 45 KB</div>
             </div>
 
 
