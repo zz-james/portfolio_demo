@@ -9,24 +9,22 @@
 
   <div id="nav">
     <ul class="side-nav">
-      <li><div class="userView">
-        <div class="background">
-          <img src="images/office.jpg">
+      <li>
+        <div class="userView">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+          <a href="#!name"><span class="white-text name">John Doe</span></a>
+          <a href="#!email"><span class="white-text email">jdandturk@coelrind.com</span></a>
         </div>
-        <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#!name"><span class="white-text name">John Doe</span></a>
-        <a href="#!email"><span class="white-text email">jdandturk@coelrind.com</span></a>
-      </div></li>
+      </li>
       <li><a href="index.php"><i class="material-icons">home</i>Home</a></li>
       <li><a href="unit.php"><i class="material-icons">view_module</i>Qualification</a></li>
-      <li><a href="upload.php"><i class="material-icons">file_upload</i>Upload Evidence</a></li>
+      <li><a href="upload.php"><i class="material-icons">folder</i>Evidence Folder</a></li>
       <li><a href="#!"><i class="material-icons">message</i>Messages</a></li>
       <li><a href="#!"><i class="material-icons">perm_identity</i>Your Profile</a></li>
       <li><a href="#!"><i class="material-icons">exit_to_app</i>Log Out</a></li>
-      
-<!--       <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
     </ul>
   </div>
   <div id="content">

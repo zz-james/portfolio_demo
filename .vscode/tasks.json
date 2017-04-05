@@ -1,0 +1,13 @@
+{
+    "version": "0.1.0",
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "build css",
+            "command": "npm run watch-css",
+            "args": [],
+            "isShellCommand": true,
+            "isBackground": true,
+        }
+    ]
+}
