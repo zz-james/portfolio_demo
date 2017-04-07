@@ -63,3 +63,48 @@ body {
 .card.file {
 height: 180px;
 }
+
+/** used in component for assign evidence upload2.php **/
+.arrow_box {
+  display: inline-block;
+	position: relative;
+	background: #88b7d5;
+  padding-left: 2px;
+  padding: 2px 5px;
+  // margin-left: -5px;
+}
+
+
+.border {
+  border-top: 2px solid black;
+  border-bottom: 0px;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.border:first-child { 
+  border-top: 0;
+}
+
+.border:last-child { 
+  // border-bottom: 2px solid black;
+}
+
+.arrow_content {
+  display: inline-block;
+  width: 200px;
+}
+
+.btn-floating.unit-fab {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    // transform: translateY(50%);
+}
+
+.card .card-content {
+    padding: 15px;
+
+}
+

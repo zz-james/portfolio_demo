@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Demo</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="build/main.css">
+  <style>
+    input[type=text] {
+      width: 200px;
+      padding: 8px 10px;
+    }
+    
+    li em {
+      background: #ff6;
+      font-weight: bold;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="nav">
+    <ul class="side-nav">
+      <li>
+        <div class="userView">
+          <div class="background">
+            <img src="images/office.jpg">
+          </div>
+          <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+          <a href="#!name"><span class="white-text name">John Doe</span></a>
+          <a href="#!email"><span class="white-text email">jdandturk@coelrind.com</span></a>
+        </div>
+      </li>
+      <li><a href="index.php"><i class="material-icons">home</i>Home</a></li>
+      <li><a href="unit.php"><i class="material-icons">view_module</i>Qualification</a></li>
+      <li><a href="upload.php"><i class="material-icons">folder</i>Evidence Folder</a></li>
+      <li><a href="#!"><i class="material-icons">message</i>Messages</a></li>
+      <li><a href="#!"><i class="material-icons">perm_identity</i>Your Profile</a></li>
+      <li><a href="#!"><i class="material-icons">exit_to_app</i>Log Out</a></li>
+      <!--       <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li> -->
+    </ul>
+  </div>
+
+  <div id="content" class="container">
+    <!-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> -->
+    <br />
+    <div class="row">
+
+        <!--<ul class="tabs tabs-fixed-width">
+          <li class="tab col s3"><a href="#test1">Test 1</a></li>
+          <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+        </ul>
+      </div>
+      <div id="test1" class="col s12">Test 1</div>
+      <div id="test2" class="col s12">Test 2</div>-->
+
+      <div class="card-panel col s7 offset-s2 white">
+
+        <ul class="tabs tabs-fixed-width">
+          <li class="tab col s3"><a href="#test1">Currently</a></li>
+          <li class="tab col s3"><a class="active" href="#test2">Edit</a></li>
+        </ul>
+        
+        <div id="test1"></div>
+        
+        <div id="test2">
+
+
+          <div class="input-field clearfix">
+            <input placeholder="Type to filter" id="filter" type="text" style="width: 90%">
+          </div>
+
+          <div class="card-panel"> <!-- this card panel belongs to the unit -->
+
+            <div class="card">
+              <div class="arrow_box orange"><span>UNIT: </span><span>Communication in a business environment</div>
+              <div class="card-content">
+                <span><h5>Communication in a business environment</h5></span>
+                <span>17 Units</span> - <span>41 Assessment Criteria</span>
+              </div>
+              <div class="card-action">
+                <a class="btn blue darken-3"><i class="material-icons">expand_more</i></a>
+                <a class="btn-floating orange right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <div class="card z-depth-2">
+              <div class="arrow_box green"><span>LEARNING OUTCOME</span></div>
+              <div class="card-content">
+                <span><h5>Understand the requirements of written and verbal business communication</h5></span>
+              </div>
+              <div class="card-action">
+                <a class="btn blue darken-3"><i class="material-icons">expand_more</i></a>
+                <a class="btn-floating green right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <!-- assessment criteria -->
+            <div class="card z-depth-3">
+              <div class="arrow_box"><span>ASSESMENT CRITERIA</span></div>
+              <div class="card-content clearfix">
+                <span><h6>Identify the nature, purpose, audience and use of the information to be communicated</h6></span>
+                <a class="btn-floating blue right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <div class="card z-depth-3">
+              <div class="arrow_box"><span>ASSESMENT CRITERIA</span></div>
+              <div class="card-content clearfix">
+                <span><h6>Use communication channels that are appropriate to the information to be communicated and the audience</h6></span>
+                <a class="btn-floating blue right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <div class="card z-depth-3">
+              <div class="arrow_box"><span>ASSESMENT CRITERIA</span></div>
+              <div class="card-content clearfix">
+                <span><h6>Present information in the format that meets the brief</h6></span>
+                <a class="btn-floating blue right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <div class="card z-depth-3">
+              <div class="arrow_box"><span>ASSESMENT CRITERIA</span></div>
+              <div class="card-content clearfix">
+                <span><h6>Adhere to agreed business communication conventions and degree of formality of expression when producing documents</h6></span>
+                <a class="btn-floating blue right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <div class="card z-depth-3">
+              <div class="arrow_box"><span>ASSESMENT CRITERIA</span></div>
+              <div class="card-content clearfix">
+                <span><h6>Produce business communications that are clear, accurate and correct<h6></span>
+                <a class="btn-floating blue right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <div class="card z-depth-3">
+              <div class="arrow_box"><span>ASSESMENT CRITERIA</span></div>
+              <div class="card-content clearfix">
+                <span><h6>Meet agreed deadlines in communicating with others</h6></span>
+                <a class="btn-floating blue right"><i class="material-icons">add</i></a>
+              </div>
+            </div>
+
+            <!-- -->
+
+            <div class="card z-depth-2">
+              <div class="arrow_box green"><span>LEARNING OUTCOME</span></div>
+              <div class="card-content">
+                <span><h5>Be able to produce written business communications</h5></span>
+                <div class="card-action">
+                  <a class="btn blue darken-3"><i class="material-icons">expand_more</i></a>
+                  <a class="btn-floating green right"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+            </div>
+            <!-- -->
+            <div class="card z-depth-2">
+              <div class="arrow_box green"><span>LEARNING OUTCOME</span></div>
+              <div class="card-content">
+                <span><h5>Be able to communicate verbally in business environments</h5></span>
+                <div class="card-action">
+                  <a class="btn blue darken-3"><i class="material-icons">expand_more</i></a>
+                  <a class="btn-floating green right sml"><i class="material-icons">add</i></a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- close .card-panel --><!-- this card panel belongs to the unit -->
+        </div>
+      </div><!-- close .card-panel -->
+
+
+
+
+
+    </div><!-- close .row -->
+  </div><!-- close #content -->
+
+  <!-- j quizzel -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+  <script>
+ $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+  </script>
+  <!--<script src="build/bundle.js"></script>-->
+</body>
+
+</html>
