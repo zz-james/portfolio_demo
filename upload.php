@@ -10,7 +10,7 @@
 <body>
 
   <div id="nav">
-    <ul class="side-nav">
+    <ul class="side-nav right">
       <li>
         <div class="userView">
           <div class="background">
@@ -34,7 +34,6 @@
   </div>
 
   <div id="content">
-    <!-- <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> -->
     <br />
 
     <div class="row" id="evidence" style="margin-left: -70px">
@@ -48,7 +47,7 @@
               <div class="card-content" style="position: relative">
 
                 <p><i class="material-icons">picture_as_pdf</i> SKW Statement Complete</p>
-                <a href="upload2.php" class="btn-floating halfway-fab blue"><i class="material-icons">info_outline</i></a>
+                <a href="#" data-activates="slide-out-r" class="btn-floating halfway-fab blue evidence"><i class="material-icons">info_outline</i></a>
               </div>
               <div class="card-action red">
                 <i class="material-icons">warning</i>This evidence is unassigned
@@ -153,12 +152,29 @@
       </div>
     </div> <!-- close #evidence -->
 
-  </div>
+  </div><!--close #content -->
+
+  <ul id="slide-out-r" class="side-nav" style="padding: 0 20px">
+    <li><a class="subheader">Subheader</a></li>
+    <li><div class="divider"></div></li>
+    <!--<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>-->
+    <?php include('upload3.php'); ?>
+  </ul>
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
   <script src="build/bundle.js"></script>
+  
+  <script>
+  $("[data-activates=slide-out-r]").sideNav({
+    edge: 'right',
+    menuWidth: '800px'
+  });
+  </script>
 </body>
 
 </html>

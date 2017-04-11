@@ -4,7 +4,7 @@ body {
   background: #eee;
 }
 
-.side-nav {
+#nav .side-nav {
   transform: translateX(0); /* switch off hiding sidebar for now */
 }
 
@@ -43,7 +43,7 @@ body {
   margin-bottom: 0;
 }
 
-.side-nav {
+#nav .side-nav {
   width: 20%;
 }
 
@@ -108,3 +108,11 @@ height: 180px;
 
 }
 
+#slide-out-r .collapsible-body {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#slide-out-r .collapsible li {
+    padding: 10px 20px;
+}
