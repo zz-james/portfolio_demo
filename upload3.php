@@ -274,10 +274,36 @@ function accordionItem($item) {
  */
 function accordionHeader($header) {
   return <<<EOT
-  <div class="collapsible-header">$header<i class="material-icons right">add</i></div>
+  <div class="collapsible-header">
+
+
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <img src="images/open.jpg" alt="" class="circle">
+        <span class="title">$header</span>
+        <p>3 Learning Outcomes / 16 Assessment Criteria <br>
+          <span class="progress-bar-container-unit"></span>
+        </p>
+        <a class="btn-floating red secondary-content"><i class="material-icons">add</i></a>
+      </li>
+    </ul>
+
+  </div>
+
+
 EOT;
 }
 
+
+
+  //   <div class="header-text">$header</div>
+  //   <ul class="action-buttons right">
+  //     <li><a class="btn-floating blue"><i class="material-icons">expand_more</i></a></li>
+  //     <li><a class="btn-floating red"><i class="material-icons">add</i></a></li>
+  //   </ul>
+  // </div>
+
+    // <a class="btn-floating red right"><i class="material-icons">add</i></a>
 
 
 /**
@@ -294,12 +320,12 @@ function accordionBody($body) {
   if( count(array_keys($body[0])) == 2) { 
     $htmlString .= createAccordion($body);
 
-  } else { // or we process the collection
+  } else { // or we create the collection
+    $htmlString .= '<div class="collection">';
     foreach($body as $item) {
-      $htmlString .= '<ul class="collection">';
-      $htmlString .= collectionItem($item); 
-      $htmlString .= '</ul>';
+        $htmlString .= collectionItem($item); 
     }    
+    $htmlString .= '</div>';
   }   
   return $htmlString;
 }
@@ -314,12 +340,12 @@ function collectionItem($item) {
   $keys = array_keys($item);
   $key = $keys[0];
   return <<<EOT
-  <li class="collection-item"> $item[$key] <i class="material-icons right">add</i></li>
+  <a href="#!" class="collection-item"><div>$item[$key]</div> <div class="btn-floating red donthide"><i class="material-icons">add</i></div> </a>
 EOT;
 }
 
 
-
+//  <li class="collection-item"> $item[$key] <i class="material-icons right">add</i></li>
 
 /**
  * render the page

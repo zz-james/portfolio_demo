@@ -47,7 +47,7 @@ body {
   width: 20%;
 }
 
-.progress-bar-container {
+.progress-bar-container, .progress-bar-container-unit {
   display: inline-block;
   position:relative;
 }
@@ -108,11 +108,136 @@ height: 180px;
 
 }
 
+#slide-out-r > ul { /* set the width of the accordian to less than width of container to avoid jumping when scroll bar appears */
+  max-width: 540px;
+}
+
 #slide-out-r .collapsible-body {
     padding-top: 2px;
     padding-bottom: 2px;
 }
 
 #slide-out-r .collapsible li {
-    padding: 10px 20px;
+    // padding: 0px 0px;
+}
+
+#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div {
+  margin: 0 10px;
+}
+
+.side-nav .collapsible .collection li {
+  padding-top: 10px;
+}
+
+#slide-out-r .collapsible.popout > li {
+    margin: 0 0;
+}
+
+
+#slide-out-r .collapsible-body {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#slide-out-r > ul > li {
+   @extend .blue, .lighten-3;
+}
+
+#slide-out-r > ul > li > .collapsible-body{
+   @extend .blue, .lighten-2;
+   padding: 0.5rem 0.5rem;
+}
+
+#slide-out-r > ul > li > .collapsible-body > .collapsible.popout{
+   @extend .green, .lighten-3;
+}
+
+#slide-out-r > ul > li > .collapsible-body > .collapsible.popout > li > .collapsible-header {
+  overflow: auto;
+  line-height: initial;
+}
+
+#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body {
+  padding: 5px 5px 10px 5px;
+   @extend .green, .lighten-1;
+}
+
+#slide-out-r div.collection {
+   @extend .white;
+}
+
+#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div a{
+     color: black;
+     overflow: auto;
+     height: auto;
+  // background-color: transparent;
+}
+
+.collection a.collection-item:not(.active) {
+    background-color: transparent;
+}
+
+.collection a.collection-item:not(.active):hover {
+  @extend .orange, .lighten-1;
+}
+
+#slide-out-r .btn-floating i {
+    width: inherit;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 40px;
+}
+
+#slide-out-r a.btn-floating {
+    display: inline-block;
+    color: #fff;
+    // position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    background-color: #26a69a;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.side-nav .collapsible-header {
+  // display: flex;
+  // justify-content: space-between;
+  overflow: auto;
+  line-height: initial;
+  padding: 0.5rem 1rem;
+}
+
+#slide-out-r ul.action-buttons li {
+    display: inline-block;
+}
+
+#slide-out-r div.header-text {
+  width: 66%;
+  padding: 1rem;
+}
+
+#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div > a > div {
+  max-width: 66%;
+  margin: 5px 0;
+}
+
+#slide-out-r path {
+    stroke-width: 6;
+}
+#slide-out-r svg {
+margin-top: -8px;
 }

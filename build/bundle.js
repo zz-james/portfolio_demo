@@ -83,6 +83,46 @@ for(var i=0; i<bars.length; i++){
 }
 
 
+var barElems2 = $(".progress-bar-container-unit");
+
+var bars2 = [];
+
+barElems2.each(function( index ) {
+  bars2.push(new ProgressBar.Line($( this )[0], {
+    strokeWidth: 12,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#00EA00',
+    trailColor: '#eee',
+    trailWidth: 1,
+    svgStyle: {width: '100%', height: '100%'},
+    text: {
+      style: {
+        // Text color.
+        // Default: same as stroke color (options.color)
+        color: '#111',
+        position: 'absolute',
+        right: '0',
+        top: '-2px',
+        padding: 0,
+        margin: 0,
+        transform: null
+      },
+      autoStyleContainer: false
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+    step: function(state, bar) {
+      bar.setText(Math.round(bar.value() * 100) + ' %');
+    }
+  }));
+});
+
+for(var i=0; i<bars2.length; i++){
+  bars2[i].animate(Math.random());
+}
+
+
 /**
  * Display a nice easy to use multiselect list
  * @Version: 2.3.8
