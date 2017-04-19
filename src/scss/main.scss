@@ -26,6 +26,8 @@ body {
   max-width: 150px;
 }
 
+
+
 .clearfix { overflow: auto; }
 
 .collection .collection-item.avatar {
@@ -117,39 +119,58 @@ height: 180px;
     padding-bottom: 2px;
 }
 
-#slide-out-r .collapsible li {
-    // padding: 0px 0px;
-}
-
 #slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div {
-  margin: 0 10px;
+  @extend .white;
 }
 
 .side-nav .collapsible .collection li {
   padding-top: 10px;
 }
 
-#slide-out-r .collapsible.popout > li {
-    margin: 0 0;
+#slide-out-r > ul > li > div.collapsible-header > ul > li {
+    margin: 0 0 0 0;
+    @extend .grey, .lighten-5; 
+}
+
+#slide-out-r > ul > li.active > div.collapsible-header.active > ul > li {
+  background-color: #E3F2FD !important;
+}
+
+#slide-out-r > ul > li.active > div.collapsible-body > ul > li > div.collapsible-header > ul > li {
+  @extend .grey, .lighten-5; 
+}
+
+#slide-out-r > ul > li.active > div.collapsible-body > ul > li.active > div.collapsible-header.active > ul > li {
+  background-color: #E3F2FD !important;
 }
 
 
 #slide-out-r .collapsible-body {
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; 
 }
 
+// #slide-out-r > ul > li {
+//    @extend .blue, .lighten-3;
+// }
+
+#slide-out-r > ul > li > .collapsible-body {
+    @extend .grey, .lighten-2;
+    padding: 0 0.1rem 0 1rem;
+}
+
+// #slide-out-r > ul > li > .collapsible-body > .collapsible.popout{
+//    @extend .green, .lighten-3;
+// }
 #slide-out-r > ul > li {
-   @extend .blue, .lighten-3;
+  margin-bottom: 0.5rem;
 }
 
-#slide-out-r > ul > li > .collapsible-body{
-   @extend .blue, .lighten-2;
-   padding: 0.5rem 0.5rem;
+.collapsible.popout > li {
+  margin-right: 0;
 }
-
-#slide-out-r > ul > li > .collapsible-body > .collapsible.popout{
-   @extend .green, .lighten-3;
+.collapsible.popout > li.active {
+  margin: 0;
 }
 
 #slide-out-r > ul > li > .collapsible-body > .collapsible.popout > li > .collapsible-header {
@@ -158,12 +179,20 @@ height: 180px;
 }
 
 #slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body {
-  padding: 5px 5px 10px 5px;
-   @extend .green, .lighten-1;
+    @extend .grey, .lighten-1;
+    padding: 0rem 0.2rem 0.5rem 1rem;
+    // padding: 0.1rem 0.1rem 0.1rem 1rem;
 }
 
-#slide-out-r div.collection {
-   @extend .white;
+
+
+
+// #slide-out-r div.collection {
+//    @extend .white;
+// }
+
+#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 #slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div a{
@@ -178,7 +207,7 @@ height: 180px;
 }
 
 .collection a.collection-item:not(.active):hover {
-  @extend .orange, .lighten-1;
+  @extend .orange, .lighten-3;
 }
 
 #slide-out-r .btn-floating i {
@@ -207,12 +236,13 @@ height: 180px;
     vertical-align: middle;
 }
 
+
 .side-nav .collapsible-header {
-  // display: flex;
-  // justify-content: space-between;
-  overflow: auto;
-  line-height: initial;
-  padding: 0.5rem 1rem;
+    overflow: auto;
+    line-height: initial;
+    padding: 0 0;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
 }
 
 #slide-out-r ul.action-buttons li {
@@ -231,7 +261,7 @@ height: 180px;
 }
 
 #slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div > a > div {
-  max-width: 66%;
+  max-width: 85%;
   margin: 5px 0;
 }
 
@@ -239,5 +269,9 @@ height: 180px;
     stroke-width: 6;
 }
 #slide-out-r svg {
-margin-top: -8px;
+margin-top: -10px;
+}
+
+.collection .collection-item.avatar {
+    padding-right: 72px;
 }

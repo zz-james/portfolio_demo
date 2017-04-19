@@ -256,11 +256,34 @@ function createAccordion($items = []) {
  * @return html (string)
  */
 function accordionItem($item) {
+
+
+
     $htmlString = '';
     $keys = array_keys($item);
 
+    // here we get specific
+    if ( count( array_keys( $item[$keys[1]][0] ) ) == 2 ) { // we are in a unit
+      $learningOutcomes = $item[$keys[1]];
+      $numLearningOutcome = count( $learningOutcomes );  
+      $numAssessmentCriteria = 0;
+      foreach ($learningOutcomes as &$value) {
+        $numAssessmentCriteria += count($value['Assessment Criteria']);
+      }
+
+    } else { // we are in a learning oucome
+      $numLearningOutcome = false;
+      $assessmentCriteria =  $item[$keys[1]];
+      $numAssessmentCriteria = count($assessmentCriteria);
+    }
+
+
+
+
+
+
     $htmlString .= '<li>';
-    $htmlString .= accordionHeader($item[$keys[0]]);
+    $htmlString .= accordionHeader($item[$keys[0]], $numLearningOutcome, $numAssessmentCriteria);
     $htmlString .= accordionBody($item[$keys[1]]);
     return $htmlString . '</li>';
   
@@ -272,7 +295,13 @@ function accordionItem($item) {
  * @param string $header
  * @return string (html)
  */
-function accordionHeader($header) {
+function accordionHeader($header = "", $numLearningOutcome = 0, $numAssessmentCriteria = 0) {
+
+  if(!$numLearningOutcome) {
+    $numLearningOutcomeString = '';
+  } else {
+    $numLearningOutcomeString = $numLearningOutcome.' Learning Outcomes /';
+  }
   return <<<EOT
   <div class="collapsible-header">
 
@@ -281,7 +310,7 @@ function accordionHeader($header) {
       <li class="collection-item avatar">
         <img src="images/open.jpg" alt="" class="circle">
         <span class="title">$header</span>
-        <p>3 Learning Outcomes / 16 Assessment Criteria <br>
+        <p> $numLearningOutcomeString $numAssessmentCriteria Assessment Criteria <br>
           <span class="progress-bar-container-unit"></span>
         </p>
         <a class="btn-floating red secondary-content"><i class="material-icons">add</i></a>
