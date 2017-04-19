@@ -210,25 +210,25 @@
     }
   })
 
-  // $('#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-header > ul > li:nth-child(2) > a').click(function learningOutcomeClick(e){
-  //   e.stopPropagation();
-  //   $button = $(e.currentTarget);
-  //   $container = $button.parent().parent().parent().parent();
-  //   switch($button.html()) {
-  //     case  '<i class="material-icons">add</i>':
-  //       $targets = $('.red',$container);
-  //       $targets.removeClass('red');
-  //       $targets.addClass('green');
-  //       $targets.html('<i class="material-icons">check</i>');
-  //       break;
-  //     default:
-  //        $targets = $('.green',$container);
-  //        $targets.removeClass('green');
-  //        $targets.addClass('red');
-  //        $targets.html('<i class="material-icons">add</i>')
-  //       break;
-  //   }
-  // });
+  $('#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-header > ul > li > a').click(function learningOutcomeClick(e){
+    e.stopPropagation();
+    $button = $(e.currentTarget);
+    $container = $button.parent().parent().parent().parent();
+    switch($button.html()) {
+      case  '<i class="material-icons">add</i>':
+        $targets = $('.red',$container);
+        $targets.removeClass('red');
+        $targets.addClass('green');
+        $targets.html('<i class="material-icons">check</i>');
+        break;
+      default:
+         $targets = $('.green',$container);
+         $targets.removeClass('green');
+         $targets.addClass('red');
+         $targets.html('<i class="material-icons">add</i>')
+        break;
+    }
+  });
 
   $('#slide-out-r > ul > li > div.collapsible-body > ul > li > div.collapsible-body > div.collection a.collection-item').click(function assessmentCriteriaClicked(e){
     e.stopPropagation();
